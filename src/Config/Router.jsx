@@ -1,4 +1,4 @@
-import { Route, Routes , BrowserRouter} from 'react-router-dom'
+import { Route, Routes} from 'react-router-dom'
 import Homepage from '../Pages/Homepage'
 import Aboutus from '../Pages/Aboutus'
 import Services from '../Pages/Services'
@@ -9,7 +9,6 @@ import GetStarted from '../Pages/GetStarted'
 const Router = () => {
   return (
     <div>
-      <BrowserRouter>
       <Routes>
         <Route path='/' element={<Homepage/>}/>
         <Route path='/aboutus' element={<Aboutus/>}/>
@@ -17,7 +16,6 @@ const Router = () => {
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/getstarted' element={<GetStarted/>}/>
       </Routes>
-      </BrowserRouter>
     </div>
   )
 }

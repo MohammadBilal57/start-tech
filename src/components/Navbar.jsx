@@ -11,7 +11,7 @@ export default function Navbar() {
   const [activeLink, setActiveLink] = useState("homepage")
 
   const navLinks = [
-    { name: "Homepage", href: "/", id: "homepage" },
+    { name: "Home", href: "/", id: "home" },
     { name: "About Us", href: "/Aboutus", id: "about" },
     { name: "Services", href: "/Services", id: "services" },
     { name: "Contact", href: "/Contact", id: "contact" },
